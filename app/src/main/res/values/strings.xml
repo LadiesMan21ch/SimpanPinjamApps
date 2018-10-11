@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">Koperasi</string>
+    <string name="title_activity_simpan_pinjam">SimpanPinjam</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="jnsPinjaman">
+        <item>Biasa</item>
+        <item>Darurat</item>
+    </string-array>
+
+    <string-array name="tipeAngsuran">
+        <item>Harian</item>
+        <item>Mingguan</item>
+        <item>Bulanan</item>
+    </string-array>
+
+    <string-array name="jnsSimpanan">
+        <item>Simpanan Sukarela</item>
+        <item>Simpanan Pokok</item>
+        <item>Simpanan Wajib</item>
+    </string-array>
+
+    <string-array name="lamaAngsuran1">
+        <item>1 bln</item>
+    </string-array>
+
+    <string-array name="lamaAngsuran12">
+        <item>1 bln</item>
+        <item>2 bln</item>
+        <item>3 bln</item>
+        <item>4 bln</item>
+        <item>5 bln</item>
+        <item>6 bln</item>
+        <item>7 bln</item>
+        <item>8 bln</item>
+        <item>9 bln</item>
+        <item>10 bln</item>
+        <item>11 bln</item>
+        <item>12 bln</item>
+    </string-array>
+</resources>

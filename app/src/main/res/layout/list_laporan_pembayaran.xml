@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:id="@+id/RelativePembayaran"
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginRight="1dp"
+        android:layout_marginTop="1dp"
+        android:background="@drawable/bg_abuabu_putih_kotak">
+
+        <RelativeLayout
+            android:id="@+id/RelativeHeaderLpPembayaran"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_pinjaman_lppembayaran"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginTop="1dp"
+                android:background="@color/abuabuMuda"
+                android:fontFamily="@font/poppins_light"
+                android:gravity="bottom"
+                android:text="Jumlah Bayar"
+                android:textAlignment="center"
+                android:textColor="@android:color/background_dark"
+                app:fontFamily="@font/poppins_light" />
+
+            <TextView
+                android:id="@+id/tv_totalangsuran_lppembayaran"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_pinjaman_lppembayaran"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:background="@color/abuabuMuda"
+                android:fontFamily="@font/poppins_light"
+                android:gravity="center_horizontal"
+                android:text="12"
+                android:textColor="@android:color/background_dark"
+                app:fontFamily="@font/poppins_light" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_tanggalTransaksi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/RelativeHeaderLpPembayaran"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="15 Juli 2018"
+            android:textColor="@android:color/background_dark"
+            android:textSize="12sp"
+            app:fontFamily="@font/poppins_light" />
+
+        <RelativeLayout
+            android:id="@+id/rlvgarisTengah"
+            android:layout_width="2dp"
+            android:layout_height="110dp"
+            android:layout_below="@+id/tv_tanggalTransaksi"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="14dp"
+            android:background="@android:color/background_dark" />
+
+        <RelativeLayout
+            android:layout_width="202dp"
+            android:layout_height="154dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignRight="@+id/rlvgarisTengah"
+            android:layout_marginBottom="1dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp">
+
+            <TextView
+                android:id="@+id/tvkdtrs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/poppins_light"
+                android:text="Jenis :"
+                android:textColor="@android:color/background_dark"
+                android:textSize="12sp"
+                app:fontFamily="@font/poppins_light" />
+
+            <TextView
+                android:id="@+id/tvKodeTransaksiLapPembayaran"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/tvkdtrs"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:text="PNJ0002839"
+                android:textColor="@android:color/background_dark"
+                android:textStyle="bold"
+                app:fontFamily="@font/poppins_light" />
+
+            <TextView
+                android:id="@+id/tvdnd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignTop="@+id/tvKodeTransaksiLapPembayaran"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="36dp"
+                android:text="Denda :"
+                android:textColor="@android:color/background_dark"
+                android:textSize="12sp"
+                app:fontFamily="@font/poppins_light" />
+
+            <TextView
+                android:id="@+id/textView132"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/tvkdtrs"
+                android:layout_below="@+id/tvdnd"
+                android:layout_marginTop="8dp"
+                android:text="Rp."
+                android:textColor="@android:color/background_dark"
+                android:textStyle="bold"
+                app:fontFamily="@font/poppins_light" />
+
+            <TextView
+                android:id="@+id/tvDendaLap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/textView132"
+                android:layout_marginLeft="2dp"
+                android:layout_toRightOf="@+id/textView132"
+                android:text="0,-"
+                android:textColor="@android:color/background_dark"
+                android:textStyle="bold"
+                app:fontFamily="@font/poppins_light" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="190dp"
+            android:layout_height="155dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true">
+
+            <TextView
+                android:id="@+id/textView230jmlh"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="24dp"
+                android:gravity="center"
+                android:text="Keterangan :"
+                android:textSize="12sp"
+                app:fontFamily="@font/poppins_light" />
+
+            <TextView
+                android:id="@+id/tvJumlahTagihanLaporanPembayaran"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@+id/textView230jmlh"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:text="aweawe"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                app:fontFamily="@font/poppins_light" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SimulasiPinjaman">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tb_simulasi_pinjaman"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@android:color/background_light">
+
+        <Button
+            android:id="@+id/btn_keluarSimulasi"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:background="@drawable/ic_action_close" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="false"
+            android:layout_marginLeft="32dp"
+            android:text="Simulasi Pinjaman"
+            android:textColor="@android:color/background_dark"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:fontFamily="@font/poppins_light" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:id="@+id/rlvsimulasiPinjaman"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_below="@+id/tb_simulasi_pinjaman"
+        android:background="@drawable/bg_abuabu_putih_kotak">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="8dp"
+            android:text="Simulasi Pinjaman dengan tipe angsuran :"
+            android:textColor="@android:color/background_dark"
+            android:textSize="10sp"
+            app:fontFamily="@font/poppins_light" />
+
+        <TextView
+            android:id="@+id/tvSimulasi_tipeAngsuran"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textView2"
+            android:layout_below="@+id/textView2"
+            android:text="Bulanan"
+            android:textColor="@android:color/background_dark"
+            android:textStyle="bold"
+            app:fontFamily="@font/poppins_light"
+            android:layout_alignLeft="@+id/textView2" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textView2"
+            android:layout_below="@+id/tvSimulasi_tipeAngsuran"
+            android:layout_marginTop="8dp"
+            android:text="Tanggal mulai pinjaman :"
+            android:textColor="@android:color/background_dark"
+            android:textSize="10sp"
+            app:fontFamily="@font/poppins_light"
+            android:layout_alignLeft="@+id/textView2" />
+
+        <TextView
+            android:id="@+id/tv_tanggalMulaiPinjaman"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView2"
+            android:layout_alignStart="@+id/textView2"
+            android:layout_below="@+id/textView4"
+            android:text="30 / 07 / 2018"
+            android:textColor="@android:color/background_dark"
+            android:textStyle="bold"
+            app:fontFamily="@font/poppins_light" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/list_simulasi_pinjaman_berkala"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rlvsimulasiPinjaman"
+        android:background="@android:color/background_light" />
+
+</RelativeLayout>

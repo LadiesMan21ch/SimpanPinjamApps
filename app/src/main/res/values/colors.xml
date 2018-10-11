@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#424242</color>
+    <color name="colorPrimaryDark">#1175bb</color>
+    <color name="colorAccent">#424242</color>
+    <color name="bgBottomNavigation">#424242</color>
+    <color name="colorPrimary1">#fdfdfd</color>
+    <color name="abuabuMuda">#f2f2f2</color>
+    <color name="backgroundKu">#1175bb</color>
+    <color name="merah">#ffcc0000</color>
+    <color name="hitam">#000000</color>
+</resources>

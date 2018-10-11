@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="8dp"
+    android:background="@android:color/background_light">
+
+    <RelativeLayout
+        android:id="@+id/rlvangsuran"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/bg_abuabu_kotak">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="16dp"
+            android:gravity="center_horizontal"
+            android:text="Angsuran ke :"
+            android:textColor="@android:color/background_dark"
+            android:textSize="10sp"
+            app:fontFamily="@font/poppins_light" />
+
+        <TextView
+            android:id="@+id/tvSimulasi_angsuran_ke"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="4dp"
+            android:layout_toRightOf="@+id/textView3"
+            android:gravity="center_horizontal"
+            android:text="1"
+            android:textColor="@android:color/background_dark"
+            android:textSize="10sp"
+            app:fontFamily="@font/poppins_light" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@+id/tvSimulasi_angsuran_ke"
+            android:text="Tanggal tempo : "
+            android:textColor="@android:color/background_dark"
+            android:textSize="10sp"
+            app:fontFamily="@font/poppins_light" />
+
+        <TextView
+            android:id="@+id/tvSimulasi_tanggal_tempo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="16dp"
+            android:layout_toRightOf="@+id/textView4"
+            android:text="30 Agustus 2020"
+            android:textColor="@android:color/background_dark"
+            android:textSize="10sp"
+            app:fontFamily="@font/poppins_light" />
+    </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rv_angsuranPokok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rlvangsuran"
+            android:background="@drawable/bg_abuabu_putih_kotak">
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="4dp"
+                android:gravity="center"
+                android:text="Angsuran Pokok :"
+                android:textColor="@android:color/background_dark"
+                android:textSize="10sp"
+                app:fontFamily="@font/poppins_light" />
+
+            <TextView
+                android:id="@+id/tvsimulasi_angsuranPokok"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView12"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="4dp"
+                android:gravity="center"
+                android:paddingLeft="40dp"
+                android:paddingRight="40dp"
+                android:text="Rp. 166.987"
+                android:textColor="@android:color/background_dark"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                app:fontFamily="@font/poppins_light" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rv_biayaBunga"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rlvangsuran"
+            android:layout_toRightOf="@+id/rv_angsuranPokok"
+            android:background="@drawable/bg_abuabu_putih_kotak">
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="4dp"
+                android:gravity="center"
+                android:text="Biaya Bunga :"
+                android:textColor="@android:color/background_dark"
+                android:textSize="10sp"
+                app:fontFamily="@font/poppins_light" />
+
+            <TextView
+                android:id="@+id/tv_simulasi_biayaBunga"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView14"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="4dp"
+                android:gravity="center"
+                android:paddingLeft="26dp"
+                android:paddingRight="26dp"
+                android:text="Rp. 25.000"
+                android:textColor="@android:color/background_dark"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                app:fontFamily="@font/poppins_light" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rv_biayaAdmin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="false"
+            android:layout_below="@+id/rlvangsuran"
+            android:layout_toRightOf="@+id/rv_biayaBunga"
+            android:background="@drawable/bg_abuabu_putih_kotak">
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="4dp"
+                android:gravity="center"
+                android:text="Biaya Admin :"
+                android:textColor="@android:color/background_dark"
+                android:textSize="10sp"
+                app:fontFamily="@font/poppins_light" />
+
+            <TextView
+                android:id="@+id/tv_simulasiBiaya_admin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView16"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="4dp"
+                android:gravity="center"
+                android:paddingLeft="24dp"
+                android:paddingRight="24dp"
+                android:text="Rp. 15.000"
+                android:textColor="@android:color/background_dark"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                app:fontFamily="@font/poppins_light" />
+        </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rvJumlahTagihan"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/rv_biayaAdmin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="4dp"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/bg_abuabu_putih_kotak">
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="2dp"
+            android:gravity="center"
+            android:text="Jumlah Tagihan :"
+            android:textColor="@android:color/background_dark"
+            android:textSize="10sp"
+            app:fontFamily="@font/poppins_light" />
+
+        <TextView
+            android:id="@+id/tvSimulasiJumlahTagihan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView8"
+            android:gravity="center"
+            android:text="Rp. 2.000.000"
+            android:textColor="@android:color/background_dark"
+            android:textStyle="bold"
+            app:fontFamily="@font/poppins_light" />
+    </RelativeLayout>
+</RelativeLayout>

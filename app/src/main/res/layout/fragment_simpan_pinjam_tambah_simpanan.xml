@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_abuabu_putih_kotak"
+    tools:context=".SimpanPinjamTambahSimpanan">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_abuabu_putih_kotak">
+
+            <TextView
+                android:id="@+id/textViewts"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:fontFamily="@font/poppins_light"
+                android:gravity="center_vertical"
+                android:text="Tambah Simpanan"
+                android:textAlignment="center"
+                android:textColor="@color/backgroundKu"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:id="@+id/rlvTanggalTransaksi"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_below="@+id/textViewts"
+                android:layout_marginTop="1dp"
+                android:background="@drawable/bg_abuabu_putih_kotak">
+
+                <TextView
+                    android:id="@+id/textView93"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginBottom="14dp"
+                    android:layout_marginLeft="16dp"
+                    android:fontFamily="@font/poppins_light"
+                    android:text="Pilih Tanggal Transaksi"
+                    android:textColor="@android:color/black" />
+
+                <EditText
+                    android:id="@+id/etPilihTanggalTransaksi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_toRightOf="@+id/textView93"
+                    android:background="@drawable/bg_abuabu_putih_kotak"
+                    android:drawableRight="@drawable/ic_spinner"
+                    android:focusable="false"
+                    android:fontFamily="@font/poppins_light"
+                    android:hint="17 Juli 2018"
+                    android:inputType="date"
+                    android:paddingLeft="6dp"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="14sp" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/jeins"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rlvTanggalTransaksi"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="1dp"
+                android:background="@drawable/bg_abuabu_putih_kotak"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView101"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="4dp"
+                    android:fontFamily="@font/poppins_light"
+                    android:text="NAMA ANGGOTA"
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:id="@+id/tv_namaAnggotaSimpanan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="4dp"
+                    android:background="?attr/editTextBackground"
+                    android:fontFamily="@font/poppins_light"
+                    android:text="Ferry Ferdana Putra"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView102"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="4dp"
+                    android:fontFamily="@font/poppins_light"
+                    android:text="JENIS SIMPANAN"
+                    android:textColor="@android:color/black" />
+
+                <Spinner
+                    android:id="@+id/sp_jenissimpanan"
+                    style="@android:style/Widget.Material.Spinner.Underlined"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="4dp"
+                    android:entries="@array/jnsSimpanan"
+                    android:fontFamily="@font/poppins_light"
+                    tools:ignore="NewApi" />
+
+                <TextView
+                    android:id="@+id/textView104s"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="4dp"
+                    android:fontFamily="@font/poppins_light"
+                    android:text="JUMLAH"
+                    android:textColor="@android:color/black" />
+
+                <EditText
+                    android:id="@+id/et_jumlahSimpanan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:fontFamily="@font/poppins_light"
+                    android:hint="500.000"
+                    android:inputType="number"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/textView105"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="4dp"
+                    android:fontFamily="@font/poppins_light"
+                    android:text="KETERANGAN"
+                    android:textColor="@android:color/black" />
+
+                <EditText
+                    android:id="@+id/et_keterangansimpanan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:fontFamily="@font/poppins_light"
+                    android:hint="Tulis keterangan Anda"
+                    android:inputType="textMultiLine"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_infoRekening"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_below="@+id/jeins"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/bg_abuabu_putih_kotak"
+                android:drawableRight="@drawable/ic_action_arrow_right_black"
+                android:fontFamily="@font/poppins_light"
+                android:gravity="center_vertical"
+                android:paddingLeft="16dp"
+                android:text="Info Rekening Koperasi"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/textView30"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_infoRekening"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/poppins_light"
+                android:text="Silahkan upload foto bukti pembayaran simpanan\nAnda untuk segera diverifikasi dari pihak KOPERASI"
+                android:textAlignment="center"
+                android:textColor="@android:color/background_dark"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/img_buktiTfsimpanan"
+                android:layout_width="240dp"
+                android:layout_height="240dp"
+                android:layout_below="@+id/textView30"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="16dp"
+                android:layout_toLeftOf="@+id/btn_cameraSimpanan"
+                android:layout_toRightOf="@id/btn_galerySimpanan"
+                android:src="@drawable/bukti_tf" />
+
+            <Button
+                android:id="@+id/btn_cameraSimpanan"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignBottom="@+id/img_buktiTfsimpanan"
+                android:layout_marginBottom="95dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="16dp"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/kamera" />
+
+            <Button
+                android:id="@+id/btn_galerySimpanan"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignBottom="@+id/img_buktiTfsimpanan"
+                android:layout_marginBottom="95dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="8dp"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/galeri" />
+
+            <TextView
+                android:id="@+id/textView31"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img_buktiTfsimpanan"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="24dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/poppins_light"
+                android:text="Upload bukti transfer Anda"
+                android:textColor="@android:color/black"
+                android:textSize="8sp" />
+
+            <Button
+                android:id="@+id/btn_bayarSimpanan"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_below="@+id/textView31"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:background="@drawable/bgkotak_biru"
+                android:fontFamily="@font/poppins"
+                android:text="Bayar"
+                android:textAllCaps="false"
+                android:textColor="@android:color/background_light" />
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

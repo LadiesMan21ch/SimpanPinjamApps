@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginRight="1dp"
+        android:layout_marginTop="1dp"
+        android:background="@drawable/bg_abuabu_putih_kotak">
+
+        <RelativeLayout
+            android:id="@+id/rlvtnggalkj"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@drawable/bg_abuabu_putih_kotak">
+
+            <TextView
+                android:id="@+id/tv_tglpembayaran_lpsimpanan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/poppins_light"
+                android:text="15 Maret 2018"
+                android:textColor="@android:color/black"
+                android:textSize="12sp" />
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/textView_lpsimpanan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/rlvtnggalkj"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/poppins_light"
+            android:text="Jenis"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_jenis_lpsimpanan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView_lpsimpanan"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/poppins_light"
+            android:text="Setoran"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/textView2_lpsimpanan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/tv_jenis_lpsimpanan"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/poppins_light"
+            android:text="Keterangan"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_keterangan_lpsimpanan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView2_lpsimpanan"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/poppins_light"
+            android:text="Maret"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/tv_garisvertikal_lppembayaran"
+            android:layout_width="1dp"
+            android:layout_height="100dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="14dp"
+            android:background="@android:color/background_dark"
+            android:fontFamily="@font/poppins_light" />
+
+        <TextView
+            android:id="@+id/textView3_lpsimpanan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/rlvtnggalkj"
+            android:layout_marginRight="32dp"
+            android:layout_marginTop="22dp"
+            android:fontFamily="@font/poppins_light"
+            android:text="Jumlah Simpanan"
+            android:textColor="@android:color/holo_blue_light"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_jmlsimpanan_lpsimpanan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/textView_lpsimpanan"
+            android:layout_marginRight="32dp"
+            android:layout_marginTop="32dp"
+            android:fontFamily="@font/poppins_light"
+            android:text="Rp. 50.000,-"
+            android:textColor="@android:color/holo_blue_light"
+            android:textStyle="bold"
+            app:fontFamily="@font/poppins_light" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

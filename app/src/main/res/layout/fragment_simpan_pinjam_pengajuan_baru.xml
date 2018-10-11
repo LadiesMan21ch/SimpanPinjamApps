@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SimpanPinjamPengajuanBaru">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_tglInputPinjamanBaru"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/poppins_light"
+                android:text="TextView"
+                android:textColor="@android:color/transparent"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignTop="@+id/tv_tglInputPinjamanBaru"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/poppins_light"
+                android:text="Jenis Pinjaman"
+                android:textColor="@android:color/background_dark"
+                android:textSize="12sp" />
+
+            <Spinner
+                android:id="@+id/spin_jenisPinjaman"
+                style="@android:style/Widget.Material.Spinner.Underlined"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView6"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:entries="@array/jnsPinjaman"
+                tools:ignore="NewApi" />
+
+            <TextView
+                android:id="@+id/textView47"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/spin_jenisPinjaman"
+                android:layout_marginLeft="16dp"
+                android:fontFamily="@font/poppins_light"
+                android:text="Jumlah Pinjaman"
+                android:textColor="@android:color/background_dark"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/etJumlahPinjaman"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView47"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:fontFamily="@font/poppins_light"
+                android:inputType="number"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/textView49"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/etJumlahPinjaman"
+                android:layout_marginLeft="16dp"
+                android:fontFamily="@font/poppins_light"
+                android:text="Tipe Angsuran"
+                android:textColor="@android:color/background_dark"
+                android:textSize="12sp" />
+
+            <Spinner
+                android:id="@+id/spin_tipeAngsuran"
+                style="@android:style/Widget.Material.Spinner.Underlined"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView49"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:entries="@array/tipeAngsuran"
+                android:fontFamily="@font/poppins_light"
+                tools:ignore="NewApi" />
+
+            <TextView
+                android:id="@+id/textView243"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/spin_tipeAngsuran"
+                android:layout_marginLeft="16dp"
+                android:fontFamily="@font/poppins_light"
+                android:text="Lama Angsuran"
+                android:textColor="@android:color/background_dark"
+                android:textSize="12sp" />
+
+            <Spinner
+                android:id="@+id/spin_lamaAngsuran"
+                style="@android:style/Widget.Material.Spinner.Underlined"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView243"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:fontFamily="@font/poppins_light"
+                tools:ignore="NewApi" />
+
+            <TextView
+                android:id="@+id/textView245"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/spin_lamaAngsuran"
+                android:layout_marginLeft="16dp"
+                android:fontFamily="@font/poppins_light"
+                android:text="Keterangan"
+                android:textColor="@android:color/background_dark"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editText8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView245"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:fontFamily="@font/poppins_light"
+                android:inputType="textMultiLine"
+                android:textSize="12sp" />
+
+            <ListView
+                android:id="@+id/list_simulasi_pinjaman_berkala"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editText8"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:background="@android:color/background_light" />
+
+            <Button
+                android:id="@+id/btnKirimPengajuanPinjaman"
+                android:layout_width="match_parent"
+                android:layout_height="34dp"
+                android:layout_below="@+id/list_simulasi_pinjaman_berkala"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:background="@drawable/bgkotak_biru"
+                android:fontFamily="@font/poppins_light"
+                android:text="Kirim Pengajuan"
+                android:textAllCaps="false"
+                android:textColor="@android:color/background_light"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
