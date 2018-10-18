@@ -97,13 +97,18 @@ public class SimpanPinjamDataPengajuan extends Fragment {
                     holder.tv_tglUpdate.setText(o.Gettglupdate());
                 }
                 if (holder.tv_status != null) {
+//                    String stts = null;
+//                    if (holder.tv_status.getText().toString().contentEquals("0")) {
+//                        stts = "Menunggu Konfirmasi";
+//                        holder.tv_status.setTextColor(getResources().getColor(R.color.backgroundKu));
+//                    }
                     holder.tv_status.setText(o.Getstatus());
                 }
             }
             return convertView;
         }
 
-        private class ViewHolder {
+        public class ViewHolder {
             TextView tv_tglInput, tv_nominal, tv_jenis, tv_keterangan, tv_lamaAngsuran, tv_alasan,
                     tv_tglUpdate, tv_status;
         }

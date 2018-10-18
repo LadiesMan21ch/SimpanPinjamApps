@@ -76,13 +76,13 @@ public class SimpanPinjamLaporanPembayaran extends Fragment {
             if (o != null) {
 
                 if (holder.tv_pinjaman_lppembayaran != null) {
-                    holder.tv_pinjaman_lppembayaran.setText(o.Getbayar());
+                    holder.tv_pinjaman_lppembayaran.setText("Jumlah Bayar : " + o.Getbayar());
                 }
                 if (holder.tv_totalangsuran_lppembayaran != null) {
-                    holder.tv_totalangsuran_lppembayaran.setText(o.Getangsuranke());
+                    holder.tv_totalangsuran_lppembayaran.setText("Angsuran Ke : " + o.Getangsuranke());
                 }
                 if (holder.tv_tanggalTransaksi != null) {
-                    holder.tv_tanggalTransaksi.setText(o.Gettgl());
+                    holder.tv_tanggalTransaksi.setText("Tanggal Pembayaran : " + o.Gettgl());
                 }
                 if (holder.tvKodeTransaksiLapPembayaran != null) {
                     holder.tvKodeTransaksiLapPembayaran.setText(o.Getjenis());
